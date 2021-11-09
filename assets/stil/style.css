@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+  height: 115px;
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+}
+
+#header .container .row .col-6 svg{
+    margin-right: 10px;
+}
+
+#header .container .row .col-6 .logo{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #182553;
+}
+#header .container .row .col-6 .header-item{
+    display: flex;
+    align-items: center;
+}
+
+#header .container .row .col-6 nav ul{
+    display: flex;
+    align-items: center;
+}
+#header .container .row .col-6 nav li {
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#header .container .row .col-6 nav li a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(24, 37, 83, 0.75);
+}
+
+#header .container .row .col-6 nav li #sign{
+    width: 115px;
+height: 35px;
+background: transparent;
+border: 1px solid rgba(24, 37, 83, 0.75);
+}
+
+main #banner{
+    height: 609px;
+    background: url('../img/BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+main #banner .container .row .col-12 .banner-item h1{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+color: #FFFFFF;
+}
+
+main #banner .container .row .col-12 .banner-item p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 139%;
+color: #FFFFFF;
+}
+
+main #modern{
+    height: 690px;
+    background-color:#fff;
+    padding-top: 170px;
+}
+
+main #modern .container-fluid{
+    max-width: 1600px;
+}
+
+main #modern .row .col-lg-6 .modern-item {
+    position: relative;
+}
+main #modern .row .col-lg-6 .modern-item .modern-left span{
+   transform: rotate(270deg);
+   position: absolute;
+   top: 40px;
+   left: 0;
+   font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: rgba(24, 37, 83, 0.75);
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-left .circle{
+    width: 233px;
+height: 2px;
+position: absolute;
+left: -55px;
+top:260px;
+background: #455DEE;
+transform: rotate(-90deg);
+
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right{
+margin-left: 160px;
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right h3{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 59px;
+color: #182553;
+
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right span{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 59px;
+color: #455DEE;
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right .modern-content{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+width: 85%;
+color: rgba(56, 57, 71, 0.75);
+margin: 40px 0;
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right  #modern-btn{
+    width: 101px;
+height: 36px;
+background: #455DEE;
+text-transform: uppercase;
+color:#fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main #modern .row .col-lg-6 {
+    padding-right: 30px;
+}
+
+main #details{
+    padding:50px 0;
+    margin-top: 50px;
+    background: #182553;
+}
+main #details .container-fluid{
+    max-width: 1600px;
+}
+main #details .row .col-lg-6{
+    padding-left: 45px;
+}
+main #details .row .col-lg-6 .deatils-item {
+    position: relative;
+}
+main #details .row .col-lg-6 .deatils-item .left-item h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #F2F1FF;
+}
+main #details .row .col-lg-6 .deatils-item .left-item  span{
+font-weight: normal;
+}
+
+main #details .row .col-lg-6 .deatils-item .left-item .details-content{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 35px;
+color: rgba(255, 255, 255, 0.75);
+width: 70%;
+margin: 45px 0;
+}
+
+main #details .row .col-lg-6 .deatils-item .left-item .dt-btn{
+    background: #455DEE;
+    width: 101px;
+height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+color:#fff;
+text-transform: uppercase;
+}
+
+main #details .row .col-lg-6 .deatils-item .right-item{
+    position: absolute;
+    top: 0;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+color: rgba(255, 255, 255, 0.5);
+    right: 0;
+    transform: rotate(90deg);
+}
+
+
+main #details .row .col-lg-6 .deatils-item .right-item .circle{
+    width: 233px;
+height: 2px;
+position: absolute;
+left: 120px;
+top:11px;
+background: #455DEE;
+transform: rotate(360deg);
+
+}
+main #details .row-2{
+    margin-top: 120px;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item{
+    position: relative;
+}
+main #details .row-2 .col-lg-6 .left-col-item .right h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 25px;
+    color: #F2F1FF;
+}
+main #details .row-2 .col-lg-6 .left-col-item .right h4 span{
+font-weight: normal;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item .right .cnt{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 35px;
+width: 70%;
+color: rgba(255, 255, 255, 0.75);
+margin: 45px 0;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item .right .right-btn{
+    background: #455DEE;
+    width: 101px;
+height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+color:#fff;
+text-transform: uppercase;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item .right {
+    margin-left: 90px;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item .left{
+position: absolute;
+}
+main #details .row-2 .col-lg-6 {
+    padding-right: 45px;
+}
+main #details .row-2 .col-lg-6 .left-col-item .left .circle{
+    width: 233px;
+    height: 2px;
+    position: absolute;
+    left: -110px;
+    top:200px;
+    background: #455DEE;
+    transform: rotate(-90deg);
+}
