@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/stil/style.css">
     <link rel="stylesheet" href="./assets/stil/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/font/Montserrat-Black.ttf">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                         <span class="logo"> Modern Innovatins</span>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end ">
+                <div class="col-6 d-flex justify-content-end align-items-center ">
                     <nav>
                         <ul>
                             <li><a href="#"> Home </a></li>
@@ -42,10 +43,26 @@
                             <li> <button id="sign"> Sign in </button> </li>
                         </ul>
                     </nav>
+                    <i class='bx bx-menu openBar' ></i>
                 </div>
             </div>
         </div>
     </header>
+
+
+    <div class="mobil-menu">
+        <div class="mobil-container">
+            <nav>
+                <ul class="listMobil">
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> What We Do </a></li>
+                    <li><a href="#"> Who We Are </a></li>
+                    <li><a href="#"> Blog </a></li>
+                    <li> <button id="sign"> Sign in </button> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <main>
         <section id="banner">
@@ -67,7 +84,7 @@
         <section id="modern">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-xl-6 col-md-12">
+                    <div class="col-lg-6 col-xl-6 col-md-12 ">
                         <div class="modern-item">
                             <div class="modern-left">
                                 <span> HAKKIMIZDA </span>
@@ -117,7 +134,7 @@
                                 <a href="#" class="dt-btn"> detaylar </a>
                             </div>
                             <div class="right-item">
-                                <span> Hizmetler </span>
+                                <span class="circle1"> Hizmetler </span>
                                 <span class="circle"></span>
                             </div>
                         </div>
@@ -147,7 +164,7 @@
                     </div>
                     <div class="col-lg-6 d-flex justify-content-end">
                         <div class="right-col-item">
-                            <img src="./assets/img/image (4).png" alt="">
+                            <img class="fs-img" src="./assets/img/image (4).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -171,7 +188,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
+                        <div class="team-item mar">
                             <img src="./assets/img/image (4).png" alt="">
                             <div class="team-text">
                                 <span>Petter Shalah</span>
@@ -199,7 +216,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section id="contact">
@@ -219,7 +235,7 @@
                     </div>
                     <div class="col-lg-6 d-flex justify-content-center">
                         <div class="right-col-item">
-                            <h5> İletişim <span>Bilgilerimiz</span> </h5>
+                            <h5 style="white-space:nowrap;"> İletişim <span>Bilgilerimiz</span> </h5>
                             <p class="title-1"> <span>Adres</span> <br>
                                 Contrary to popular belief, Lorem Ipsum is not simply <br>
                                 classical Latin literature from 45 BC.
@@ -241,7 +257,7 @@
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="footer-item">
                         <div class="flex-ft d-flex align-items-center">
                             <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +269,7 @@
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of <br> classical Latin literature from 45 BC.</p>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-end">
+                <div class="col-lg-6 col-md-12 d-flex justify-content-end align-items-end">
                  <a href="#">
                     <img src="./assets/img/Vector.png" alt="">
                  </a>
@@ -267,6 +283,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

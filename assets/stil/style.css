@@ -2,11 +2,13 @@
     font-family: Montserrat;
     src: url(../font/Montserrat-Medium.ttf);
 }
+
 @font-face {
-    font-family:Mulish ;
+    font-family: Mulish;
     src: url('../font/Mulish-Medium.ttf');
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,44 +17,52 @@
     list-style-type: none !important;
 }
 
-body{
+body {
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
 
-#header{
-  height: 115px;
-  background-color:#fff;
-  display: flex;
-  align-items: center;
+#header {
+    height: 115px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
 }
 
-#header .container .row .col-6 svg{
+#header .container .row .col-6 svg {
     margin-right: 10px;
 }
 
-#header .container .row .col-6 .logo{
+#header .container .row .col-6 .logo {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #182553;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #182553;
 }
-#header .container .row .col-6 .header-item{
+
+#header .container .row .col-6 .openBar {
+    display: none;
+    font-size: 35px;
+}
+
+#header .container .row .col-6 .header-item {
     display: flex;
     align-items: center;
 }
 
-#header .container .row .col-6 nav ul{
+#header .container .row .col-6 nav ul {
     display: flex;
     align-items: center;
 }
+
 #header .container .row .col-6 nav li {
     margin-left: 50px;
     white-space: nowrap;
 }
 
-#header .container .row .col-6 nav li a{
+#header .container .row .col-6 nav li a {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -61,14 +71,63 @@ color: #182553;
     color: rgba(24, 37, 83, 0.75);
 }
 
-#header .container .row .col-6 nav li #sign{
+#header .container .row .col-6 nav li #sign {
     width: 115px;
-height: 35px;
-background: transparent;
-border: 1px solid rgba(24, 37, 83, 0.75);
+    height: 35px;
+    background: transparent;
+    border: 1px solid rgba(24, 37, 83, 0.75);
+    transition: 200ms all;
 }
 
-main #banner{
+#header .container .row .col-6 nav li #sign:hover{
+    background: #182553;
+    color:#fff;
+}
+
+.mobil-menu .mobil-container nav ul {
+    position: fixed;
+    top: 115px;
+    left: -100%;
+    height: calc(100vh - 115px);
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    transition: 350ms ease;
+}
+
+.mobil-menu .mobil-container nav ul.active {
+    left: 0;
+}
+
+.mobil-menu .mobil-container nav ul li {
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.mobil-menu .mobil-container nav ul li a {
+    color: #182553;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    display: block;
+}
+
+.mobil-menu .mobil-container li #sign {
+    width: 115px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid rgba(24, 37, 83, 0.75);
+    transition: 200ms all;
+}
+.mobil-menu .mobil-container li #sign:hover {
+    background: #182553;
+    color:#fff;
+}
+main #banner {
     height: 609px;
     background: url('../img/BG.png');
     background-size: cover;
@@ -77,125 +136,129 @@ main #banner{
     align-items: center;
 }
 
-main #banner .container .row .col-12 .banner-item h1{
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 64px;
-line-height: 78px;
-color: #FFFFFF;
-}
-
-main #banner .container .row .col-12 .banner-item p{
+main #banner .container .row .col-12 .banner-item h1 {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 139%;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
 }
 
-main #modern{
-    height: 690px;
-    background-color:#fff;
+main #banner .container .row .col-12 .banner-item p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 139%;
+    color: #FFFFFF;
+}
+
+main #modern {
+    background-color: #fff;
     padding-top: 170px;
 }
 
-main #modern .container-fluid{
+main #modern .container-fluid {
     max-width: 1600px;
 }
 
 main #modern .row .col-lg-6 .modern-item {
     position: relative;
 }
-main #modern .row .col-lg-6 .modern-item .modern-left span{
-   transform: rotate(270deg);
-   position: absolute;
-   top: 40px;
-   left: -24px;
-   font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: rgba(24, 37, 83, 0.75);
+
+main #modern .row .col-lg-6 .modern-item .modern-left span {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 40px;
+    left: -24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(24, 37, 83, 0.75);
 }
 
-main #modern .row .col-lg-6 .modern-item .modern-left .circle{
+main #modern .row .col-lg-6 .modern-item .modern-left .circle {
     width: 233px;
-height: 2px;
-position: absolute;
-left: -82px;
-top:260px;
-background: #455DEE;
-transform: rotate(-90deg);
+    height: 2px;
+    position: absolute;
+    left: -82px;
+    top: 260px;
+    background: #455DEE;
+    transform: rotate(-90deg);
 
 }
 
-main #modern .row .col-lg-6 .modern-item .modern-right{
-margin-left: 150px;
+main #modern .row .col-lg-6 .modern-item .modern-right {
+    margin-left: 150px;
 }
 
-main #modern .row .col-lg-6 .modern-item .modern-right h3{
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 59px;
-color: #182553;
-
-}
-
-main #modern .row .col-lg-6 .modern-item .modern-right span{
+main #modern .row .col-lg-6 .modern-item .modern-right h3 {
     font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 59px;
-color: #455DEE;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #182553;
+
 }
 
-main #modern .row .col-lg-6 .modern-item .modern-right .modern-content{
+main #modern .row .col-lg-6 .modern-item .modern-right span {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-width: 85%;
-color: rgba(56, 57, 71, 0.75);
-margin: 40px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #455DEE;
 }
 
-main #modern .row .col-lg-6 .modern-item .modern-right  #modern-btn{
+main #modern .row .col-lg-6 .modern-item .modern-right .modern-content {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    width: 85%;
+    color: rgba(56, 57, 71, 0.75);
+    margin: 40px 0;
+}
+
+main #modern .row .col-lg-6 .modern-item .modern-right #modern-btn {
     width: 101px;
-height: 36px;
-background: #455DEE;
-text-transform: uppercase;
-color:#fff;
-display: flex;
-align-items: center;
-justify-content: center;
+    height: 36px;
+    background: #455DEE;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main #modern .row .col-lg-6 {
     padding-right: 30px;
 }
 
-main #details{
-    padding:50px 0;
+main #details {
+    padding: 50px 0;
     margin-top: 50px;
     background: #182553;
 }
-main #details .container-fluid{
+
+main #details .container-fluid {
     max-width: 1600px;
 }
-main #details .row .col-lg-6{
+
+main #details .row .col-lg-6 {
     padding-left: 45px;
 }
+
 main #details .row .col-lg-6 .deatils-item {
     position: relative;
 }
-main #details .row .col-lg-6 .deatils-item .left-item h3{
+
+main #details .row .col-lg-6 .deatils-item .left-item h3 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -203,64 +266,67 @@ main #details .row .col-lg-6 .deatils-item .left-item h3{
     line-height: 59px;
     color: #F2F1FF;
 }
-main #details .row .col-lg-6 .deatils-item .left-item  span{
-font-weight: normal;
+
+main #details .row .col-lg-6 .deatils-item .left-item span {
+    font-weight: normal;
 }
 
-main #details .row .col-lg-6 .deatils-item .left-item .details-content{
+main #details .row .col-lg-6 .deatils-item .left-item .details-content {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 35px;
-color: rgba(255, 255, 255, 0.75);
-width: 70%;
-margin: 45px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.75);
+    width: 70%;
+    margin: 45px 0;
 }
 
-main #details .row .col-lg-6 .deatils-item .left-item .dt-btn{
+main #details .row .col-lg-6 .deatils-item .left-item .dt-btn {
     background: #455DEE;
     width: 101px;
-height: 36px;
-display: flex;
-align-items: center;
-justify-content: center;
-color:#fff;
-text-transform: uppercase;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-main #details .row .col-lg-6 .deatils-item .right-item{
+main #details .row .col-lg-6 .deatils-item .right-item {
     position: absolute;
     top: 0;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-color: rgba(255, 255, 255, 0.5);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5);
     right: 0;
     transform: rotate(90deg);
 }
 
 
-main #details .row .col-lg-6 .deatils-item .right-item .circle{
+main #details .row .col-lg-6 .deatils-item .right-item .circle {
     width: 233px;
-height: 2px;
-position: absolute;
-left: 120px;
-top:11px;
-background: #455DEE;
-transform: rotate(360deg);
+    height: 2px;
+    position: absolute;
+    left: 120px;
+    top: 11px;
+    background: #455DEE;
+    transform: rotate(360deg);
 
 }
-main #details .row-2{
+
+main #details .row-2 {
     margin-top: 120px;
 }
 
-main #details .row-2 .col-lg-6 .left-col-item{
+main #details .row-2 .col-lg-6 .left-col-item {
     position: relative;
 }
-main #details .row-2 .col-lg-6 .left-col-item .right h4{
+
+main #details .row-2 .col-lg-6 .left-col-item .right h4 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -268,182 +334,204 @@ main #details .row-2 .col-lg-6 .left-col-item .right h4{
     line-height: 25px;
     color: #F2F1FF;
 }
-main #details .row-2 .col-lg-6 .left-col-item .right h4 span{
-font-weight: normal;
+
+main #details .row-2 .col-lg-6 .left-col-item .right h4 span {
+    font-weight: normal;
 }
 
-main #details .row-2 .col-lg-6 .left-col-item .right .cnt{
+main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
     font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 35px;
-width: 70%;
-color: rgba(255, 255, 255, 0.75);
-margin: 45px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 45px 0;
 }
 
-main #details .row-2 .col-lg-6 .left-col-item .right .right-btn{
+main #details .row-2 .col-lg-6 .left-col-item .right .right-btn {
     background: #455DEE;
     width: 101px;
-height: 36px;
-display: flex;
-align-items: center;
-justify-content: center;
-color:#fff;
-text-transform: uppercase;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 main #details .row-2 .col-lg-6 .left-col-item .right {
     margin-left: 90px;
 }
 
-main #details .row-2 .col-lg-6 .left-col-item .left{
-position: absolute;
+main #details .row-2 .col-lg-6 .left-col-item .left {
+    position: absolute;
 }
+
 main #details .row-2 .col-lg-6 {
     padding-right: 45px;
 }
-main #details .row-2 .col-lg-6 .left-col-item .left .circle{
+
+main #details .row-2 .col-lg-6 .left-col-item .left .circle {
     width: 233px;
     height: 2px;
     position: absolute;
     left: -110px;
-    top:200px;
+    top: 200px;
     background: #455DEE;
     transform: rotate(-90deg);
 }
 
-main #team{
+main #team {
     margin-top: 150px;
     margin-bottom: 200px;
 }
 
-main #team .container .team-title{
-text-align: center;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 64px;
-line-height: 78px;
-margin-bottom: 40px;
+main #team .container .team-title {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 40px;
 }
 
-main #team .container .team-title span{
+main #team .container .team-title span {
     color: #455DEE;
 }
+
 main #team .container {
     padding: 0 50px;
 }
-main #team .container .row .col-lg-3 .team-item{
-    width: 258px;
-height: 279px;
-margin: 0 10px;
 
+main #team .container .row .col-lg-3 .team-item {
+    max-width: 258px;
+    max-height: 279px;
 }
+
 main #team .container .row .col-lg-3 {
     display: flex;
     justify-content: center;
 }
-main #team .container .row .col-lg-3 .team-item img{
+
+main #team .container .row .col-lg-3 .team-item img {
     width: 100%;
-    height: 100%;
 }
 
-main #team .container .row .col-lg-3 .team-item .team-text{
+main #team .container .row .col-lg-3 .team-item .team-text {
     background: #FFFFFF;
     padding: 10px 10px;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-}
-main #team .container .row .col-lg-3 .team-item .team-text span{
-    font-family: Mulish;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 25px;
-color: #182553;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-main #contact .container .row .col-lg-6 .contact-left-item form{
+main #team .container .row .col-lg-3 .team-item .team-text span {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #182553;
+}
+
+main #contact .container .row .col-lg-6 .contact-left-item form {
     display: flex;
     flex-direction: column;
 }
-main #contact .container .row .col-lg-6 .contact-left-item{
+
+main #contact .container .row .col-lg-6 .contact-left-item {
     width: 514px;
-   padding: 80px 59px;
-height: 557px;
+    padding: 80px 59px;
+    height: 557px;
     background: linear-gradient(180deg, #455DEE 0%, rgba(69, 93, 238, 0.85) 100%);
 }
-main #contact .container .row .col-lg-6 .contact-left-item h6{
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 25px;
-color: #FFFFFF;
-margin-bottom: 20px;
-align-self: flex-start;
+
+main #contact .container .row .col-lg-6 .contact-left-item h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    align-self: flex-start;
 }
 
-main #contact .container .row .col-lg-6 .contact-left-item form .input{
+main #contact .container .row .col-lg-6 .contact-left-item form .input {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
-main #contact .container .row .col-lg-6 .contact-left-item form .input::placeholder{
+main #contact .container .row .col-lg-6 .contact-left-item form .input::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 25px;
-    color:#fff;
+    color: #fff;
     padding: 0 15px;
 }
 
-main #contact .container .row .col-lg-6 .contact-left-item form #formBtn{
+main #contact .container .row .col-lg-6 .contact-left-item form #formBtn {
     background: transparent;
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.75);
-    color:#fff;
-}
-main #contact .container .row .col-lg-6 .contact-left-item form  #text,#email,#formBtn{
-    width: 394px;
-height: 54px;
-margin-bottom: 20px;
+    color: #fff;
 }
 
-main #contact .container .row .col-lg-6 .contact-left-item form #message{
+main #contact .container .row .col-lg-6 .contact-left-item form #text,
+#email,
+#formBtn {
+    width: 394px;
+    height: 54px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+}
+
+main #contact .container .row .col-lg-6 .contact-left-item form #email::placeholder {
+    margin-left: 20px;
+    color: #fff;
+
+}
+
+
+main #contact .container .row .col-lg-6 .contact-left-item form #message {
     width: 394px;
     height: 153px;
-    padding: 15px;
+    padding: 10px;
+    color: #fff;
+
 }
 
-main #contact .container .row .col-lg-6 .right-col-item{
+main #contact .container .row .col-lg-6 .right-col-item {
+    max-width: 514px;
     width: 514px;
-height: 557px;
-background: #182553;
-padding: 90px 20px;
+    height: 557px;
+    background: #182553;
+    padding: 90px 20px;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item h5{
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 25px;
-color: #FFFFFF;
-text-align: center;
-margin-bottom: 65px;
+main #contact .container .row .col-lg-6 .right-col-item h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 65px;
 
 
 }
 
-main #contact .container .row .col-lg-6 .right-col-item h5 span{
-    color:#455DEE;
+main #contact .container .row .col-lg-6 .right-col-item h5 span {
+    color: #455DEE;
     font-weight: normal;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-1{
+main #contact .container .row .col-lg-6 .right-col-item .title-1 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -454,7 +542,7 @@ main #contact .container .row .col-lg-6 .right-col-item .title-1{
 
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-1 span{
+main #contact .container .row .col-lg-6 .right-col-item .title-1 span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -465,7 +553,7 @@ main #contact .container .row .col-lg-6 .right-col-item .title-1 span{
 }
 
 
-main #contact .container .row .col-lg-6 .right-col-item .title-2{
+main #contact .container .row .col-lg-6 .right-col-item .title-2 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -474,27 +562,28 @@ main #contact .container .row .col-lg-6 .right-col-item .title-2{
     color: rgba(255, 255, 255, 0.75);
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit{
+main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 25px;
     color: #FFFFFF;
-     margin-top: 60px;
-     display: block;
+    margin-top: 60px;
+    display: block;
 }
 
-#footer{
+#footer {
     margin-top: 100px;
     height: 151px;
     background: #182553;
     display: flex;
-    align-items: end;
+    align-items: center;
     padding: 0 20px;
+    
 }
 
-#footer .container-fluid .row .col-6 .footer-item {
+#footer .container-fluid .row .col-lg-6 .footer-item {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -503,11 +592,329 @@ main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit{
     color: rgba(255, 255, 255, 0.75);
 }
 
-#footer .container-fluid .row .col-6 .footer-item svg{
+#footer .container-fluid .row .col-lg-6 .footer-item svg {
     margin-right: 10px;
 }
 
-#footer .container-fluid .row .col-6  img{
+#footer .container-fluid .row .col-lg-6 img {
     margin-left: 20px;
     padding-bottom: 18px;
 }
+
+@media only screen and (max-width:1024px) {
+    main #modern .row .col-lg-6 .modern-item .modern-right {
+        margin-left: 100px;
+    }
+
+    main #modern .row .col-lg-6 .modern-right-col img {
+        width: 460px;
+    }
+
+    main #details .row .col-lg-6 .left-item img {
+        width: 460px;
+    }
+
+    main #details .row-2 .col-lg-6 .right-col-item img {
+        width: 460px;
+    }
+
+    main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
+        width: 85%;
+    }
+
+    main #contact .container .row .col-lg-6 .right-col-item h5 {
+        font-size: 35px;
+    }
+
+    main #contact .container .row .col-lg-6 {
+        display: flex;
+    }
+
+    main #contact .container .row .col-lg-6 .right-col-item {
+        margin-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width:991px) {
+    main #contact .container .row .col-lg-6 .right-col-item{
+        margin: 25px 0 0;
+    }
+    #header .container .row .col-6 nav ul {
+        display: none;
+    }
+
+    main #modern .row .col-lg-6 {
+        padding: 0;
+    }
+
+    #header .container .row .col-6 .openBar {
+        display: block;
+    }
+
+    main #modern {
+      
+        padding-top: 30px;
+    }
+
+    main #modern .row .col-lg-6 .modern-item {
+        text-align: center;
+    }
+
+    main #modern .row .col-lg-6 .modern-item .modern-right {
+        margin-left: 0;
+    }
+
+    main #modern .row .col-lg-6 .modern-item .modern-right .modern-content {
+        text-align: center;
+        width: 75%;
+        margin: 35px auto;
+    }
+
+    main #modern .row .col-lg-6 .modern-item .modern-right #modern-btn {
+        margin: 0 auto;
+    }
+
+    main #modern .row .col-lg-6 {
+        padding: 0;
+        margin-top: 30px;
+        justify-content: center !important;
+    }
+     main #details .container-fluid .row .col-lg-6  {
+        text-align: center;
+    }
+
+    main #details .container-fluid .row .col-lg-6 img{
+        margin-bottom: 20px;
+    }
+    main #details .row .col-lg-6 .deatils-item .left-item .details-content{
+        text-align: center;
+        width: 85%;
+        margin: 35px auto;
+    }
+    main #details .row .col-lg-6 .deatils-item .left-item .dt-btn{
+        margin: 0 auto;
+    }
+    main #details .row .col-lg-6 {
+        padding: 0;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .right .right-btn {
+        margin: 0 auto;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .right{
+        margin: 0;
+ 
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
+        width: 85%;
+        margin: 38px auto;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .left .circle{
+        left: -90px;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .left  span img{
+       margin-left: 16px;
+    }
+    main #details .row-2 .col-lg-6 {
+        margin-top: 23px;
+        justify-content: center !important;
+    }
+
+  main #team .container .row .col-md-6 .team-item{
+margin-bottom: 70px;
+   }
+   main #team{
+       margin-bottom: 20px;
+   }
+}
+
+@media only screen and (max-width:768px){
+    main #banner .container .row .col-12 .banner-item h1{
+        font-size: 50px;
+    }
+    main #team .container .team-title {
+    font-size: 45px;
+    white-space: nowrap;
+    }
+    #footer{
+        height: 30vh;
+        text-align: start;
+    }
+    #footer .container-fluid .row .col-lg-6 .footer-item{
+        line-height: 30px;
+        text-align: start;
+}
+#footer .container-fluid .row .col-lg-6 a {
+    justify-content: center !important;
+    align-items: center !important;
+    margin:0;
+    padding: 0;
+}
+#footer .container-fluid .row .col-lg-6{
+    justify-content: start !important;
+}
+#footer .container-fluid .row .col-lg-6 img{
+    margin-right:20px;
+    margin-left: 0;
+}
+}
+
+@media only screen and (max-width:522px){
+    main #details .row .col-lg-6 .deatils-item .right-item .circle{
+        left: 160px;
+        top: 0px;
+    }
+     main #details .row .col-lg-6 .deatils-item .right-item .circle1{
+         position: relative;
+         bottom:13px;
+         left: 35px;
+     }
+    main #modern .row .col-lg-6 .modern-item .modern-left span{
+        left: -17px;
+        font-size: 14px;
+    }
+    main #modern .row .col-lg-6 .modern-item .modern-left .circle{
+        left: -87px;
+    }
+    main #banner .container .row .col-12 .banner-item p{
+        font-size: 15px;
+    }
+    main #banner .container .row .col-12 .banner-item h1{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    main #team {
+margin-top: 50px;
+    }
+    main #team .container .team-title {
+    font-size: 35px;
+    }
+    main #details .row .col-lg-6 .deatils-item .left-item .details-content{
+        font-size: 16px;
+        width: 70%;
+    }
+    main #details .row .col-lg-6 .deatils-item .left-item h3{
+        font-size: 35px;
+    }
+    main #details .row .col-lg-6 .left-item img{
+        width: 70%;
+    }
+    main #modern .row .col-lg-6 .modern-item .modern-right .modern-content{
+        font-size: 16px;
+        width: 70%;
+    }
+    main #modern .row .col-lg-6 .modern-right-col img {
+        width: 70%;
+    }
+    
+    main #modern .row .col-lg-6 .modern-right-col{
+        display: flex;
+        justify-content: center;
+    }
+    main #modern .row .col-lg-6 .modern-item .modern-right h3{
+        font-size: 35px;
+    }
+    main #modern .row .col-lg-6 .modern-item .modern-right span{
+        line-height: 30px;
+        font-size: 35px;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .right h4{
+        font-size: 35px;
+    }
+    main #details .row-2 .col-lg-6 .left-col-item .right .cnt{
+        font-size: 16px;
+        width: 80%;
+    }
+    main #details .container-fluid .row .col-lg-6 .fs-img{
+        width: 70%;
+    }
+
+    main #contact .container .row .col-lg-6 .contact-left-item{
+        width: 390px;
+        padding-top: 60px;
+        padding-left: 45px;
+    }
+    main #contact .container .row .col-lg-6 .right-col-item{
+        width: 390px;
+    }
+    
+main #contact .container .row .col-lg-6 .contact-left-item form #formBtn {
+    background: transparent;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: #fff;
+}
+
+main #contact .container .row .col-lg-6 .contact-left-item form #text,
+#email,
+#formBtn {
+    margin: 0 auto;
+    width: 294px;
+    margin-bottom: 20px;
+}
+main #contact .container .row .col-lg-6 .contact-left-item form #message {
+    width: 294px;
+     margin: 0 auto;
+}
+}
+
+@media only screen and (max-width:400px){
+    main #contact .container .row .col-lg-6 .contact-left-item{
+        width: 330px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+    }
+    main #contact .container .row .col-lg-6 .contact-left-item form #text,
+#email,
+#formBtn {
+    margin: 0 auto;
+    width: 260px;
+    margin-bottom: 20px;
+}
+main #contact .container .row .col-lg-6 .contact-left-item form #message {
+    width: 260px;
+     margin: 0 auto;
+}
+
+
+
+main #contact .container .row .col-lg-6 .contact-left-item h6{
+    white-space: nowrap;
+    font-size: 27px;
+    padding-left: 35px;
+}
+
+main #contact .container .row .col-lg-6 .right-col-item{
+    width: 330px;
+    height: 500px;
+    padding: 50px 10px;
+    
+}
+main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
+
+    margin: 0;
+}
+
+main #contact .container .row .col-lg-6 .right-col-item .title-1 {
+margin-bottom: 25px;
+}
+main #contact .container .row .col-lg-6 .right-col-item h5{
+    font-size: 27px;
+    margin-bottom: 35px;
+    text-align: start;
+}
+
+#footer .container-fluid .row .col-lg-6 .footer-item{
+    line-height: 20px;
+    font-size: 11px;
+}
+main #team .container .team-title{
+    font-size: 30px;
+}
+
+}
+
