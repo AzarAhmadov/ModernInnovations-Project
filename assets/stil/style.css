@@ -325,7 +325,7 @@ main #details .row .col-lg-6 .deatils-item .right-item {
 main #details .row .col-lg-6 .deatils-item .right-item .circle-1 {
     position: absolute;
     left: 35px;
-    top: -112px;
+    top: -109px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -413,7 +413,7 @@ main #details .row-2 .col-lg-6 .left-col-item .left .circle {
     height: 2px;
     position: absolute;
     left: -120px;
-    top: 200px;
+    top: 195px;
     background: #455DEE;
     transform: rotate(-90deg);
 }
