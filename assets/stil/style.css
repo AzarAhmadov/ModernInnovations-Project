@@ -29,6 +29,10 @@ body {
     align-items: center;
 }
 
+#header .container {
+    max-width: 1126px;
+}
+
 #header .container .row .col-6 svg {
     margin-right: 10px;
 }
@@ -79,9 +83,9 @@ body {
     transition: 200ms all;
 }
 
-#header .container .row .col-6 nav li #sign:hover{
+#header .container .row .col-6 nav li #sign:hover {
     background: #182553;
-    color:#fff;
+    color: #fff;
 }
 
 .mobil-menu .mobil-container nav ul {
@@ -123,10 +127,12 @@ body {
     border: 1px solid rgba(24, 37, 83, 0.75);
     transition: 200ms all;
 }
+
 .mobil-menu .mobil-container li #sign:hover {
     background: #182553;
-    color:#fff;
+    color: #fff;
 }
+
 main #banner {
     height: 609px;
     background: url('../img/BG.png');
@@ -134,6 +140,10 @@ main #banner {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+}
+
+main #banner .container {
+    max-width: 1126px;
 }
 
 main #banner .container .row .col-12 .banner-item h1 {
@@ -160,7 +170,7 @@ main #modern {
 }
 
 main #modern .container-fluid {
-    max-width: 1600px;
+    max-width: 1366px;
 }
 
 main #modern .row .col-lg-6 .modern-item {
@@ -170,8 +180,8 @@ main #modern .row .col-lg-6 .modern-item {
 main #modern .row .col-lg-6 .modern-item .modern-left span {
     transform: rotate(270deg);
     position: absolute;
-    top: 40px;
-    left: -24px;
+    top: 35px;
+    left: -8px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -184,15 +194,15 @@ main #modern .row .col-lg-6 .modern-item .modern-left .circle {
     width: 233px;
     height: 2px;
     position: absolute;
-    left: -82px;
-    top: 260px;
+    left: -65px;
+    top: 290px;
     background: #455DEE;
     transform: rotate(-90deg);
 
 }
 
 main #modern .row .col-lg-6 .modern-item .modern-right {
-    margin-left: 150px;
+    margin-left: 120px;
 }
 
 main #modern .row .col-lg-6 .modern-item .modern-right h3 {
@@ -219,8 +229,8 @@ main #modern .row .col-lg-6 .modern-item .modern-right .modern-content {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
-    width: 85%;
+    line-height: 35px;
+    width: 486px;
     color: rgba(56, 57, 71, 0.75);
     margin: 40px 0;
 }
@@ -247,11 +257,11 @@ main #details {
 }
 
 main #details .container-fluid {
-    max-width: 1600px;
+    max-width: 1366px;
 }
 
 main #details .row .col-lg-6 {
-    padding-left: 45px;
+    padding-left: 59px;
 }
 
 main #details .row .col-lg-6 .deatils-item {
@@ -267,6 +277,11 @@ main #details .row .col-lg-6 .deatils-item .left-item h3 {
     color: #F2F1FF;
 }
 
+main #details .row .col-lg-6 .left-item img {
+    width: 634px;
+    height: 431px;
+}
+
 main #details .row .col-lg-6 .deatils-item .left-item span {
     font-weight: normal;
 }
@@ -278,8 +293,9 @@ main #details .row .col-lg-6 .deatils-item .left-item .details-content {
     font-size: 18px;
     line-height: 35px;
     color: rgba(255, 255, 255, 0.75);
-    width: 70%;
-    margin: 45px 0;
+    width: 486px;
+    margin-top: 45px;
+    margin-bottom: 55px;
 }
 
 main #details .row .col-lg-6 .deatils-item .left-item .dt-btn {
@@ -306,20 +322,34 @@ main #details .row .col-lg-6 .deatils-item .right-item {
     transform: rotate(90deg);
 }
 
+main #details .row .col-lg-6 .deatils-item .right-item .circle-1 {
+    position: absolute;
+    left: 35px;
+    top: -112px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+
+    color: rgba(255, 255, 255, 0.5);
+}
 
 main #details .row .col-lg-6 .deatils-item .right-item .circle {
-    width: 233px;
+    width: 195px;
     height: 2px;
     position: absolute;
-    left: 120px;
-    top: 11px;
+    left: 175px;
+    top: -100px;
     background: #455DEE;
     transform: rotate(360deg);
 
 }
 
 main #details .row-2 {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 main #details .row-2 .col-lg-6 .left-col-item {
@@ -345,7 +375,7 @@ main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
     font-weight: 500;
     font-size: 18px;
     line-height: 35px;
-    width: 70%;
+    width: 486px;
     color: rgba(255, 255, 255, 0.75);
     margin: 45px 0;
 }
@@ -370,69 +400,96 @@ main #details .row-2 .col-lg-6 .left-col-item .left {
 }
 
 main #details .row-2 .col-lg-6 {
-    padding-right: 45px;
+    padding-right: 41px;
+}
+
+main #details .row-2 .col-lg-6 .left-col-item .left span img {
+    position: absolute;
+    left: -4px;
 }
 
 main #details .row-2 .col-lg-6 .left-col-item .left .circle {
-    width: 233px;
+    width: 247px;
     height: 2px;
     position: absolute;
-    left: -110px;
+    left: -120px;
     top: 200px;
     background: #455DEE;
     transform: rotate(-90deg);
 }
 
-main #team {
-    margin-top: 150px;
-    margin-bottom: 200px;
+main #details .row-2 .col-lg-6 .right-col-item img {
+    width: 588px;
+    height: 425px;
 }
 
-main #team .container .team-title {
+#team {
+    padding-top: 100px;
+
+}
+
+#team .container {
+    max-width: 1115px;
+}
+
+#team .container .team-title {
     text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 78px;
-    margin-bottom: 40px;
+    color: #2C182A;
+    margin-bottom: 35px;
 }
 
-main #team .container .team-title span {
-    color: #455DEE;
-}
-
-main #team .container {
-    padding: 0 50px;
-}
-
-main #team .container .row .col-lg-3 .team-item {
+#team .container .row .col-lg-3 .team-item .img img {
     max-width: 258px;
-    max-height: 279px;
+    height: 279px;
 }
 
-main #team .container .row .col-lg-3 {
-    display: flex;
-    justify-content: center;
-}
-
-main #team .container .row .col-lg-3 .team-item img {
-    width: 100%;
-}
-
-main #team .container .row .col-lg-3 .team-item .team-text {
+#team .container .row .col-lg-3 .team-item .img-text {
     background: #FFFFFF;
-    padding: 10px 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-main #team .container .row .col-lg-3 .team-item .team-text span {
+#team .container .row .col-lg-3 .team-item .img-text span {
     font-family: Mulish;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     line-height: 25px;
     color: #182553;
+    padding-top: 15px;
+    padding-left: 17px;
+    display: block;
+}
+
+#team .container .row .col-lg-3 .team-item .img-text p {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 5px;
+    padding-left: 17px;
+    padding-bottom: 20px;
+
+
+    color: rgba(24, 37, 83, 0.75);
+}
+
+#team .container .team-title span {
+    color: #455DEE;
+}
+
+main #contact {
+    margin: 110px auto 92px;
+    max-width: 1366px;
+}
+
+main #contact .container {
+    max-width: 1115px;
 }
 
 main #contact .container .row .col-lg-6 .contact-left-item form {
@@ -454,8 +511,15 @@ main #contact .container .row .col-lg-6 .contact-left-item h6 {
     font-size: 36px;
     line-height: 25px;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     align-self: flex-start;
+}
+main #contact .container .row .col-lg-6 {
+    display: flex;
+    justify-content: center;
+}
+main #contact .container .row .col-lg-6 .contact-left-item {
+    margin-right: 29px;
 }
 
 main #contact .container .row .col-lg-6 .contact-left-item form .input {
@@ -506,71 +570,86 @@ main #contact .container .row .col-lg-6 .contact-left-item form #message {
 }
 
 main #contact .container .row .col-lg-6 .right-col-item {
-    max-width: 514px;
-    width: 514px;
+    width: 572px;
+    max-width: 572px;
     height: 557px;
     background: #182553;
-    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item h5 {
+
+main #contact .container .row .col-lg-6 .right-col-item .title h5 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 25px;
     color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 65px;
-
-
 }
 
-main #contact .container .row .col-lg-6 .right-col-item h5 span {
+main #contact .container .row .col-lg-6 .right-col-item .title h5 span {
+    font-weight: normal;
     color: #455DEE;
-    font-weight: normal;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 75px;
-
+main #contact .container .row .col-lg-6 .right-col-item .title {
+    padding-top: 78px;
+    padding-left: 40px;
+    padding-right: 62px;
+    white-space: nowrap;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-1 span {
+main #contact .container .row .col-lg-6 .right-col-item .adres h6 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 25px;
     color: #FFFFFF;
-    display: block;
 }
 
-
-main #contact .container .row .col-lg-6 .right-col-item .title-2 {
+main #contact .container .row .col-lg-6 .right-col-item .adres p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.75);
+    margin-top: 14px;
 }
 
-main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
+main #contact .container .row .col-lg-6 .right-col-item .adres {
+    padding-left: 42px;
+    padding-top: 80px;
+}
+
+main #contact .container .row .col-lg-6 .right-col-item .adres2 h6 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 25px;
     color: #FFFFFF;
-    margin-top: 60px;
-    display: block;
+}
+
+main #contact .container .row .col-lg-6 .right-col-item .adres2 {
+    padding-left: 42px;
+    padding-top: 70px;
+}
+
+main #contact .container .row .col-lg-6 .right-col-item .adres2 span {
+    margin-top: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 5px;
+
+
+    color: rgba(255, 255, 255, 0.75);
 }
 
 #footer {
@@ -580,7 +659,12 @@ main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    
+    margin: 0 auto;
+
+}
+
+#footer .container-fluid {
+    width: 1281px;
 }
 
 #footer .container-fluid .row .col-lg-6 .footer-item {
@@ -600,321 +684,3 @@ main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
     margin-left: 20px;
     padding-bottom: 18px;
 }
-
-@media only screen and (max-width:1024px) {
-    main #modern .row .col-lg-6 .modern-item .modern-right {
-        margin-left: 100px;
-    }
-
-    main #modern .row .col-lg-6 .modern-right-col img {
-        width: 460px;
-    }
-
-    main #details .row .col-lg-6 .left-item img {
-        width: 460px;
-    }
-
-    main #details .row-2 .col-lg-6 .right-col-item img {
-        width: 460px;
-    }
-
-    main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
-        width: 85%;
-    }
-
-    main #contact .container .row .col-lg-6 .right-col-item h5 {
-        font-size: 35px;
-    }
-
-    main #contact .container .row .col-lg-6 {
-        display: flex;
-    }
-
-    main #contact .container .row .col-lg-6 .right-col-item {
-        margin-left: 20px;
-    }
-
-}
-
-@media only screen and (max-width:991px) {
-    main #contact .container .row .col-lg-6 .right-col-item{
-        margin: 25px 0 0;
-    }
-    #header .container .row .col-6 nav ul {
-        display: none;
-    }
-
-    main #modern .row .col-lg-6 {
-        padding: 0;
-    }
-
-    #header .container .row .col-6 .openBar {
-        display: block;
-    }
-
-    main #modern {
-      
-        padding-top: 30px;
-    }
-
-    main #modern .row .col-lg-6 .modern-item {
-        text-align: center;
-    }
-
-    main #modern .row .col-lg-6 .modern-item .modern-right {
-        margin-left: 0;
-    }
-
-    main #modern .row .col-lg-6 .modern-item .modern-right .modern-content {
-        text-align: center;
-        width: 75%;
-        margin: 35px auto;
-    }
-
-    main #modern .row .col-lg-6 .modern-item .modern-right #modern-btn {
-        margin: 0 auto;
-    }
-
-    main #modern .row .col-lg-6 {
-        padding: 0;
-        margin-top: 30px;
-        justify-content: center !important;
-    }
-     main #details .container-fluid .row .col-lg-6  {
-        text-align: center;
-    }
-
-    main #details .container-fluid .row .col-lg-6 img{
-        margin-bottom: 20px;
-    }
-    main #details .row .col-lg-6 .deatils-item .left-item .details-content{
-        text-align: center;
-        width: 85%;
-        margin: 35px auto;
-    }
-    main #details .row .col-lg-6 .deatils-item .left-item .dt-btn{
-        margin: 0 auto;
-    }
-    main #details .row .col-lg-6 {
-        padding: 0;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .right .right-btn {
-        margin: 0 auto;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .right{
-        margin: 0;
- 
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .right .cnt {
-        width: 85%;
-        margin: 38px auto;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .left .circle{
-        left: -90px;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .left  span img{
-       margin-left: 16px;
-    }
-    main #details .row-2 .col-lg-6 {
-        margin-top: 23px;
-        justify-content: center !important;
-    }
-
-  main #team .container .row .col-md-6 .team-item{
-margin-bottom: 70px;
-   }
-   main #team{
-       margin-bottom: 20px;
-   }
-}
-
-@media only screen and (max-width:768px){
-    main #banner .container .row .col-12 .banner-item h1{
-        font-size: 50px;
-    }
-    main #team .container .team-title {
-    font-size: 45px;
-    white-space: nowrap;
-    }
-    #footer{
-        height: 30vh;
-        text-align: start;
-    }
-    #footer .container-fluid .row .col-lg-6 .footer-item{
-        line-height: 30px;
-        text-align: start;
-}
-#footer .container-fluid .row .col-lg-6 a {
-    justify-content: center !important;
-    align-items: center !important;
-    margin:0;
-    padding: 0;
-}
-#footer .container-fluid .row .col-lg-6{
-    justify-content: start !important;
-}
-#footer .container-fluid .row .col-lg-6 img{
-    margin-right:20px;
-    margin-left: 0;
-}
-}
-
-@media only screen and (max-width:522px){
-    main #details .row .col-lg-6 .deatils-item .right-item .circle{
-        left: 160px;
-        top: 0px;
-    }
-     main #details .row .col-lg-6 .deatils-item .right-item .circle1{
-         position: relative;
-         bottom:13px;
-         left: 35px;
-     }
-    main #modern .row .col-lg-6 .modern-item .modern-left span{
-        left: -17px;
-        font-size: 14px;
-    }
-    main #modern .row .col-lg-6 .modern-item .modern-left .circle{
-        left: -87px;
-    }
-    main #banner .container .row .col-12 .banner-item p{
-        font-size: 15px;
-    }
-    main #banner .container .row .col-12 .banner-item h1{
-        font-size: 40px;
-        line-height: 55px;
-    }
-    main #team {
-margin-top: 50px;
-    }
-    main #team .container .team-title {
-    font-size: 35px;
-    }
-    main #details .row .col-lg-6 .deatils-item .left-item .details-content{
-        font-size: 16px;
-        width: 70%;
-    }
-    main #details .row .col-lg-6 .deatils-item .left-item h3{
-        font-size: 35px;
-    }
-    main #details .row .col-lg-6 .left-item img{
-        width: 70%;
-    }
-    main #modern .row .col-lg-6 .modern-item .modern-right .modern-content{
-        font-size: 16px;
-        width: 70%;
-    }
-    main #modern .row .col-lg-6 .modern-right-col img {
-        width: 70%;
-    }
-    
-    main #modern .row .col-lg-6 .modern-right-col{
-        display: flex;
-        justify-content: center;
-    }
-    main #modern .row .col-lg-6 .modern-item .modern-right h3{
-        font-size: 35px;
-    }
-    main #modern .row .col-lg-6 .modern-item .modern-right span{
-        line-height: 30px;
-        font-size: 35px;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .right h4{
-        font-size: 35px;
-    }
-    main #details .row-2 .col-lg-6 .left-col-item .right .cnt{
-        font-size: 16px;
-        width: 80%;
-    }
-    main #details .container-fluid .row .col-lg-6 .fs-img{
-        width: 70%;
-    }
-
-    main #contact .container .row .col-lg-6 .contact-left-item{
-        width: 390px;
-        padding-top: 60px;
-        padding-left: 45px;
-    }
-    main #contact .container .row .col-lg-6 .right-col-item{
-        width: 390px;
-    }
-    
-main #contact .container .row .col-lg-6 .contact-left-item form #formBtn {
-    background: transparent;
-    margin-top: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    color: #fff;
-}
-
-main #contact .container .row .col-lg-6 .contact-left-item form #text,
-#email,
-#formBtn {
-    margin: 0 auto;
-    width: 294px;
-    margin-bottom: 20px;
-}
-main #contact .container .row .col-lg-6 .contact-left-item form #message {
-    width: 294px;
-     margin: 0 auto;
-}
-}
-
-@media only screen and (max-width:400px){
-    main #contact .container .row .col-lg-6 .contact-left-item{
-        width: 330px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        height: 500px;
-    }
-    main #contact .container .row .col-lg-6 .contact-left-item form #text,
-#email,
-#formBtn {
-    margin: 0 auto;
-    width: 260px;
-    margin-bottom: 20px;
-}
-main #contact .container .row .col-lg-6 .contact-left-item form #message {
-    width: 260px;
-     margin: 0 auto;
-}
-
-
-
-main #contact .container .row .col-lg-6 .contact-left-item h6{
-    white-space: nowrap;
-    font-size: 27px;
-    padding-left: 35px;
-}
-
-main #contact .container .row .col-lg-6 .right-col-item{
-    width: 330px;
-    height: 500px;
-    padding: 50px 10px;
-    
-}
-main #contact .container .row .col-lg-6 .right-col-item .title-2 .tit {
-
-    margin: 0;
-}
-
-main #contact .container .row .col-lg-6 .right-col-item .title-1 {
-margin-bottom: 25px;
-}
-main #contact .container .row .col-lg-6 .right-col-item h5{
-    font-size: 27px;
-    margin-bottom: 35px;
-    text-align: start;
-}
-
-#footer .container-fluid .row .col-lg-6 .footer-item{
-    line-height: 20px;
-    font-size: 11px;
-}
-main #team .container .team-title{
-    font-size: 30px;
-}
-
-}
-
