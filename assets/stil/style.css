@@ -443,11 +443,17 @@ main #details .row-2 .col-lg-6 .right-col-item img {
     margin-bottom: 35px;
 }
 
+<<<<<<< HEAD
 
 
 #team .container .row .col-lg-3 .team-item .img img {
     width: 100%;
     height: 100%;
+=======
+#team .container .row .col-lg-3 .team-item .img img {
+    max-width: 258px;
+    height: 279px;
+>>>>>>> 7990a87b2e9064bc1416efba906c536ec4fa188e
 }
 
 #team .container .row .col-lg-3 .team-item .img-text {
@@ -488,8 +494,11 @@ main #details .row-2 .col-lg-6 .right-col-item img {
 main #contact {
     margin: 110px auto 92px;
     max-width: 1366px;
+<<<<<<< HEAD
     padding-right: 126px;
     padding-left: 125px;
+=======
+>>>>>>> 7990a87b2e9064bc1416efba906c536ec4fa188e
 }
 
 main #contact .container {
