@@ -658,17 +658,16 @@ main #contact .container .row .col-lg-6 .right-col-item .adres2 span {
 
 #footer {
     margin-top: 100px;
-    height: 151px;
     background: #182553;
     display: flex;
     align-items: center;
-    padding: 0 20px;
     margin: 0 auto;
 
 }
 
 #footer .container-fluid {
     width: 1281px;
+    height: 151px;
 }
 
 #footer .container-fluid .row .col-lg-6 .footer-item {
@@ -678,6 +677,7 @@ main #contact .container .row .col-lg-6 .right-col-item .adres2 span {
     font-size: 14px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.75);
+    padding-top: 33px;
 }
 
 #footer .container-fluid .row .col-lg-6 .footer-item svg {
@@ -686,5 +686,4 @@ main #contact .container .row .col-lg-6 .right-col-item .adres2 span {
 
 #footer .container-fluid .row .col-lg-6 img {
     margin-left: 20px;
-    padding-bottom: 18px;
 }
