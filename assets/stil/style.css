@@ -74,6 +74,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body.active{
+    overflow: hidden;
+}
+
 #header {
     height: 115px;
     background-color: #fff;
@@ -730,7 +734,6 @@ main #contact .container-fluid .row .col-lg-6 .right-col-item .adres2 span {
     line-height: 30px;
     color: rgba(255, 255, 255, 0.75);
     padding-top: 33px;
-    position: relative;
 }
 
 
@@ -739,9 +742,22 @@ main #contact .container-fluid .row .col-lg-6 .right-col-item .adres2 span {
     margin-top: -3px;
 }
 
+
+#footer .container-fluid .row .col-lg-6 .footer-item .flex-ft img{
+    margin-top: -5px;
+    margin-right: 3px;
+}
+#footer .container-fluid .row .col-lg-6 .footer-item  .span-two{
+    width: 652px;
+    display: block;
+}
+
+
 #footer .container-fluid .row .col-lg-6 a img{
     margin-left: 15px;
 }
+
+
 
 
 @media only screen and (max-width:1200px){
@@ -856,6 +872,9 @@ margin-left: 40px !important;
     main #details .row-2 .col-lg-6 .left-col-item .right .right-btn{
         margin: 0 auto;
     }
+    #footer .container-fluid .row .col-lg-6 .footer-item  .span-two{
+    width: 90%;
+}
 }
 
 @media only screen and (max-width:650px){
@@ -944,7 +963,7 @@ margin-left: 40px !important;
     }
     #footer .container-fluid .row .col-lg-6 .footer-item {
         text-align: start;
-        line-height: 20px;
+        line-height: 23px;
         padding:0;
     }
    #footer .container-fluid .row .img-col{
