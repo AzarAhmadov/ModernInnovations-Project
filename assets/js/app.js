@@ -1,4 +1,4 @@
-let open_bar = document.querySelector('.openBar');
+let open_bar = document.querySelector('.open_bar');
 let mobil_list = document.querySelector('.listMobil');
 
 open_bar.addEventListener('click', () => {
